@@ -8,10 +8,15 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/_mingw_secapi.h \
   C:/msys64/ucrt64/include/_mingw_stat64.h \
   C:/msys64/ucrt64/include/_timeval.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bit \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/align.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/allocated_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_base.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.h \
@@ -50,22 +55,32 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
   C:/msys64/ucrt64/include/c++/15.2.0/cctype \
   C:/msys64/ucrt64/include/c++/15.2.0/cerrno \
@@ -80,8 +95,10 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
   C:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
   C:/msys64/ucrt64/include/c++/15.2.0/exception \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/aligned_buffer.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/atomicity.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/concurrence.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
@@ -91,8 +108,11 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/iostream \
   C:/msys64/ucrt64/include/c++/15.2.0/istream \
   C:/msys64/ucrt64/include/c++/15.2.0/limits \
+  C:/msys64/ucrt64/include/c++/15.2.0/memory \
   C:/msys64/ucrt64/include/c++/15.2.0/new \
   C:/msys64/ucrt64/include/c++/15.2.0/ostream \
+  C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
   C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
@@ -115,6 +135,7 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/tuple \
   C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
   C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
+  C:/msys64/ucrt64/include/c++/15.2.0/vector \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -166,10 +187,13 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/colour.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/common.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable_list.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/ray.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/sphere.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/vec3.h
 
-
-C:/msys64/ucrt64/include/_mingw_stat64.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_hermite.tcc:
 
@@ -177,13 +201,19 @@ C:/msys64/ucrt64/include/c++/15.2.0/istream:
 
 C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h:
 
+C:/msys64/ucrt64/include/_mingw_stat64.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h:
+
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/main.cpp:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h:
 
 C:/msys64/ucrt64/include/_mingw_secapi.h:
 
-C:/msys64/ucrt64/include/_mingw.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc:
+
+C:/msys64/ucrt64/include/_mingw.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h:
 
@@ -199,17 +229,39 @@ C:/msys64/ucrt64/include/_mingw_off_t.h:
 
 C:/msys64/ucrt64/include/_timeval.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bit:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/align.h:
 
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/vec3.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/allocated_ptr.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.tcc:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_base.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/clocale:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_lockfree_defines.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.tcc:
 
@@ -226,8 +278,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h:
 C:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/charconv.h:
 
@@ -267,25 +317,19 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/string:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_atomic.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.tcc:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/clocale:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h:
 
 C:/msys64/ucrt64/include/sys/timeb.h:
 
@@ -301,29 +345,41 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h:
 
 C:/msys64/ucrt64/include/corecrt.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h:
 
@@ -349,7 +405,11 @@ C:/msys64/ucrt64/include/c++/15.2.0/cwctype:
 
 C:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/ext/concurrence.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/exception:
+
+C:/msys64/ucrt64/include/c++/15.2.0/ext/aligned_buffer.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h:
 
@@ -371,9 +431,17 @@ C:/msys64/ucrt64/include/c++/15.2.0/iostream:
 
 C:/msys64/ucrt64/include/c++/15.2.0/limits:
 
+C:/msys64/ucrt64/include/c++/15.2.0/ostream:
+
+C:/msys64/ucrt64/include/c++/15.2.0/memory:
+
 C:/msys64/ucrt64/include/c++/15.2.0/new:
 
-C:/msys64/ucrt64/include/c++/15.2.0/ostream:
+C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h:
 
@@ -407,6 +475,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/type_traits:
 
 C:/msys64/ucrt64/include/c++/15.2.0/typeinfo:
 
+C:/msys64/ucrt64/include/c++/15.2.0/vector:
+
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
@@ -420,8 +490,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h:
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
@@ -500,3 +568,13 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
 
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/colour.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/common.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable_list.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/ray.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/sphere.h:

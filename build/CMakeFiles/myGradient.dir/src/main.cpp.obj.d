@@ -1,6 +1,6 @@
 CMakeFiles/myGradient.dir/src/main.cpp.obj: \
  C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\main.cpp \
- C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\vec3.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\common.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cmath \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -159,4 +159,31 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/istream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
- C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\colour.h
+ C:/msys64/ucrt64/include/c++/15.2.0/memory \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/align.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/allocated_ptr.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/ext/aligned_buffer.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/ext/concurrence.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_base.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\colour.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\vec3.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\interval.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\ray.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\hittable.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\hittable_list.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/vector \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\sphere.h
