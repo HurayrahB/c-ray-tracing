@@ -208,6 +208,7 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable_list.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/interval.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/material.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/ray.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/sphere.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/vec3.h
@@ -628,6 +629,8 @@ C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/common.h:
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable.h:
 
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable_list.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/material.h:
 
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/ray.h:
 
