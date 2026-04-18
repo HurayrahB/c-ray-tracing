@@ -6,11 +6,12 @@ A ray tracer written in C++
 
 | File | Purpose |
 | --- | --- |
-| `main.cpp` | Scene setup and render loop |
+| `main.cpp` | Scene setup and render entry point |
 | `common.h` | Shared constants and includes |
 | `vec3.h` | 3D vector, also used as `point3` and `colour` |
 | `ray.h` | Ray class |
 | `colour.h` | Colour output |
+| `camera.h` | Camera, sampling, and ray colour logic |
 | `hittable.h` | Abstract base for hittable geometry |
 | `hittable_list.h` | Scene object container |
 | `sphere.h` | Sphere geometry |
@@ -24,6 +25,7 @@ A ray tracer written in C++
 - [x] Surface normal shading
 - [x] Front/back face detection
 - [x] Hittable abstraction and scene list
-- [ ] Antialiasing
-- [ ] Diffuse, metal, and glass materials
+- [x] Antialiasing
+- [x] Diffuse materials
+- [ ] Metal and glass materials
 - [ ] Positionable camera, FOV, depth of field
