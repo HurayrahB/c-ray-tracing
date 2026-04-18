@@ -5,7 +5,7 @@ A ray tracer written in C++
 ## Structure
 
 | File | Purpose |
-|---|---|
+| --- | --- |
 | `main.cpp` | Scene setup and render loop |
 | `common.h` | Shared constants and includes |
 | `vec3.h` | 3D vector, also used as `point3` and `colour` |

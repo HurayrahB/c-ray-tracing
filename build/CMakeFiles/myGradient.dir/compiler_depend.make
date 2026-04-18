@@ -52,6 +52,8 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
@@ -67,6 +69,7 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
@@ -76,6 +79,7 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
@@ -88,6 +92,7 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/cmath \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -110,10 +115,13 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/limits \
   C:/msys64/ucrt64/include/c++/15.2.0/memory \
   C:/msys64/ucrt64/include/c++/15.2.0/new \
+  C:/msys64/ucrt64/include/c++/15.2.0/numeric \
   C:/msys64/ucrt64/include/c++/15.2.0/ostream \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/random \
   C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
   C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/15.2.0/streambuf \
@@ -146,6 +154,7 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/opt_random.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   C:/msys64/ucrt64/include/corecrt.h \
   C:/msys64/ucrt64/include/corecrt_startup.h \
@@ -173,6 +182,7 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -182,14 +192,22 @@ CMakeFiles/myGradient.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/
   C:/msys64/ucrt64/include/vadefs.h \
   C:/msys64/ucrt64/include/wchar.h \
   C:/msys64/ucrt64/include/wctype.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/camera.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/colour.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/common.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/hittable_list.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/interval.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/ray.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/sphere.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/vec3.h
@@ -214,6 +232,8 @@ C:/msys64/ucrt64/include/_mingw_secapi.h:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc:
 
 C:/msys64/ucrt64/include/_mingw.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h:
 
@@ -240,6 +260,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/align.h:
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/vec3.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h:
 
@@ -275,6 +297,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h:
 
+C:/msys64/ucrt64/include/stdint.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h:
@@ -290,10 +314,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/ios_base.h:
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h:
 
@@ -343,11 +363,23 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc:
 
+C:/msys64/ucrt64/include/c++/15.2.0/iosfwd:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/random.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/typeinfo:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h:
 
@@ -355,7 +387,11 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/opt_random.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h:
 
@@ -368,6 +404,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h:
 
@@ -394,6 +432,10 @@ C:/msys64/ucrt64/include/c++/15.2.0/cmath:
 C:/msys64/ucrt64/include/c++/15.2.0/concepts:
 
 C:/msys64/ucrt64/include/c++/15.2.0/cstddef:
+
+C:/msys64/ucrt64/include/pthread_unistd.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/cstdint:
 
 C:/msys64/ucrt64/include/c++/15.2.0/cstdio:
 
@@ -425,8 +467,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/initializer_list:
 
 C:/msys64/ucrt64/include/c++/15.2.0/ios:
 
-C:/msys64/ucrt64/include/c++/15.2.0/iosfwd:
-
 C:/msys64/ucrt64/include/c++/15.2.0/iostream:
 
 C:/msys64/ucrt64/include/c++/15.2.0/limits:
@@ -435,7 +475,11 @@ C:/msys64/ucrt64/include/c++/15.2.0/ostream:
 
 C:/msys64/ucrt64/include/c++/15.2.0/memory:
 
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/interval.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/new:
+
+C:/msys64/ucrt64/include/c++/15.2.0/numeric:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
@@ -443,7 +487,11 @@ C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/random:
 
 C:/msys64/ucrt64/include/c++/15.2.0/stdexcept:
 
@@ -454,6 +502,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/streambuf:
 C:/msys64/ucrt64/include/c++/15.2.0/string_view:
 
 C:/msys64/ucrt64/include/c++/15.2.0/system_error:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/tr1/exp_integral.tcc:
 
@@ -472,8 +522,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/tr1/special_function_util.h:
 C:/msys64/ucrt64/include/c++/15.2.0/tuple:
 
 C:/msys64/ucrt64/include/c++/15.2.0/type_traits:
-
-C:/msys64/ucrt64/include/c++/15.2.0/typeinfo:
 
 C:/msys64/ucrt64/include/c++/15.2.0/vector:
 
@@ -529,8 +577,6 @@ C:/msys64/ucrt64/include/pthread_signal.h:
 
 C:/msys64/ucrt64/include/pthread_time.h:
 
-C:/msys64/ucrt64/include/pthread_unistd.h:
-
 C:/msys64/ucrt64/include/sched.h:
 
 C:/msys64/ucrt64/include/sdks/_mingw_ddk.h:
@@ -563,9 +609,17 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
 
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h:
+
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
 
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
+
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/camera.h:
 
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/colour.h:
 
