@@ -7,4 +7,4 @@ project ( raytracing
 
 set ( CMAKE_CXX_STANDARD 17 )
 
-add_executable( myGradient src/main.cpp )
+add_executable( myScene src/main.cpp )

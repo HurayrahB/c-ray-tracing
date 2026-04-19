@@ -62,11 +62,11 @@ CMAKE_BINARY_DIR = C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/myGradient.dir/all
+all: CMakeFiles/myScene.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/myGradient.dir/codegen
+codegen: CMakeFiles/myScene.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,40 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/myGradient.dir/clean
+clean: CMakeFiles/myScene.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/myGradient.dir
+# Target rules for target CMakeFiles/myScene.dir
 
 # All Build rule for target.
-CMakeFiles/myGradient.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myGradient.dir\build.make CMakeFiles/myGradient.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myGradient.dir\build.make CMakeFiles/myGradient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\build\CMakeFiles --progress-num=1,2 "Built target myGradient"
-.PHONY : CMakeFiles/myGradient.dir/all
+CMakeFiles/myScene.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myScene.dir\build.make CMakeFiles/myScene.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myScene.dir\build.make CMakeFiles/myScene.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\build\CMakeFiles --progress-num=1,2 "Built target myScene"
+.PHONY : CMakeFiles/myScene.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/myGradient.dir/rule: cmake_check_build_system
+CMakeFiles/myScene.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/myGradient.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/myScene.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\build\CMakeFiles 0
-.PHONY : CMakeFiles/myGradient.dir/rule
+.PHONY : CMakeFiles/myScene.dir/rule
 
 # Convenience name for target.
-myGradient: CMakeFiles/myGradient.dir/rule
-.PHONY : myGradient
+myScene: CMakeFiles/myScene.dir/rule
+.PHONY : myScene
 
 # codegen rule for target.
-CMakeFiles/myGradient.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myGradient.dir\build.make CMakeFiles/myGradient.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\build\CMakeFiles --progress-num=1,2 "Finished codegen for target myGradient"
-.PHONY : CMakeFiles/myGradient.dir/codegen
+CMakeFiles/myScene.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myScene.dir\build.make CMakeFiles/myScene.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\build\CMakeFiles --progress-num=1,2 "Finished codegen for target myScene"
+.PHONY : CMakeFiles/myScene.dir/codegen
 
 # clean rule for target.
-CMakeFiles/myGradient.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myGradient.dir\build.make CMakeFiles/myGradient.dir/clean
-.PHONY : CMakeFiles/myGradient.dir/clean
+CMakeFiles/myScene.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myScene.dir\build.make CMakeFiles/myScene.dir/clean
+.PHONY : CMakeFiles/myScene.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named myGradient
+# Target rules for targets named myScene
 
 # Build rule for target.
-myGradient: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 myGradient
-.PHONY : myGradient
+myScene: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 myScene
+.PHONY : myScene
 
 # fast build rule for target.
-myGradient/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myGradient.dir\build.make CMakeFiles/myGradient.dir/build
-.PHONY : myGradient/fast
+myScene/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myScene.dir\build.make CMakeFiles/myScene.dir/build
+.PHONY : myScene/fast
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myGradient.dir\build.make CMakeFiles/myGradient.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myScene.dir\build.make CMakeFiles/myScene.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -141,7 +141,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myGradient.dir\build.make CMakeFiles/myGradient.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myScene.dir\build.make CMakeFiles/myScene.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -149,7 +149,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myGradient.dir\build.make CMakeFiles/myGradient.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myScene.dir\build.make CMakeFiles/myScene.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... myGradient
+	@echo ... myScene
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
