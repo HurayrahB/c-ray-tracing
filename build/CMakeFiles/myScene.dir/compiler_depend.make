@@ -8,9 +8,11 @@ CMakeFiles/myScene.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/c--
   C:/msys64/ucrt64/include/_mingw_secapi.h \
   C:/msys64/ucrt64/include/_mingw_stat64.h \
   C:/msys64/ucrt64/include/_timeval.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/algorithm \
   C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bit \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/align.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/allocated_ptr.h \
@@ -62,10 +64,12 @@ CMakeFiles/myScene.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/c--
   C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
@@ -118,6 +122,7 @@ CMakeFiles/myScene.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/c--
   C:/msys64/ucrt64/include/c++/15.2.0/numeric \
   C:/msys64/ucrt64/include/c++/15.2.0/ostream \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
@@ -202,6 +207,8 @@ CMakeFiles/myScene.dir/src/main.cpp.obj: C:/Users/huray/OneDrive/Desktop/C++/c--
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/aabb.h \
+  C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/bvh.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/camera.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/colour.h \
   C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/common.h \
@@ -226,8 +233,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h:
 
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/main.cpp:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h:
-
 C:/msys64/ucrt64/include/_mingw_secapi.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc:
@@ -239,6 +244,12 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h:
 
 C:/msys64/ucrt64/include/_mingw_mac.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/algorithm:
 
 C:/msys64/ucrt64/include/c++/15.2.0/tr1/bessel_function.tcc:
 
@@ -255,6 +266,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h:
 C:/msys64/ucrt64/include/c++/15.2.0/bit:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/align.h:
 
@@ -330,13 +343,7 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/string:
 
@@ -376,11 +383,19 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h:
 
@@ -485,6 +500,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/numeric:
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h:
 
@@ -619,6 +636,10 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/aabb.h:
+
+C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/bvh.h:
 
 C:/Users/huray/OneDrive/Desktop/C++/c--ray-tracing/src/camera.h:
 

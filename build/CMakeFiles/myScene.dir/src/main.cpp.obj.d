@@ -200,8 +200,15 @@ CMakeFiles/myScene.dir/src/main.cpp.obj: \
  C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\interval.h \
  C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\vec3.h \
  C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\ray.h \
- C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\camera.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\bvh.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\aabb.h \
  C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\hittable.h \
- C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\material.h \
  C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\hittable_list.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/algorithm \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\camera.h \
+ C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\material.h \
  C:\Users\huray\OneDrive\Desktop\C++\c--ray-tracing\src\sphere.h
