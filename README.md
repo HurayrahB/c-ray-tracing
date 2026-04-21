@@ -34,7 +34,14 @@ The renderer writes PPM image output to `stdout`, so it composes naturally with 
 **Scene construction**
 
 - Polymorphic `hittable` interface for extensible geometry
-- Efficient closest-hit traversal over scene object lists
+- Bounding volume hierarchy (BVH) for logarithmic-time ray–scene intersection
+- Efficient closest-hit traversal with early exit on bounding box misses
+
+**Motion blur**
+
+- Rays carry a time parameter sampled randomly within [0, 1] per frame
+- Moving spheres interpolate their center position at ray time for correct intersection
+- BVH bounding boxes span the full range of motion for animated objects
 
 ## Tech Stack
 
@@ -94,13 +101,15 @@ src/
 ├── hittable.h        — Abstract base for intersectable geometry
 ├── hittable_list.h   — Scene container with linear closest-hit traversal
 ├── sphere.h          — Ray–sphere intersection
-└── material.h        — Material base + lambertian, metal, and dielectric
+├── material.h        — Material base + lambertian, metal, and dielectric
+├── aabb.h            — Axis-aligned bounding box with slab-method ray intersection
+└── bvh.h             — Bounding volume hierarchy for sublinear ray–scene traversal
 ```
 
 ## Future Improvements
 
-- [ ] Motion blur for moving objects
-- [ ] Bounding volume hierarchies (BVH) to accelerate rendering of complex scenes
+- [x] Motion blur for moving objects
+- [x] Bounding volume hierarchies (BVH) to accelerate rendering of complex scenes
 - [ ] Texture maps for image-based surface detail
 - [ ] Perlin noise for procedural textures
 - [ ] Quadrilateral primitives (foundation for disks, triangles, rings, and other 2D surfaces)
