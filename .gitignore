@@ -1,1 +1,4 @@
 /build/
+
+# raytracer output images
+*.ppm

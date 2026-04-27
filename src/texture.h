@@ -2,10 +2,12 @@
 #define TEXTURE_H
 
 #include "common.h"
+#include "stb_implement.h"
 
 class texture;
 class solid_colour;
 class checker_texture;
+class image_texture;
 
 class texture {
     public:
@@ -48,6 +50,32 @@ class checker_texture : public texture {
         double inv_scale;
         shared_ptr<texture> even;
         shared_ptr<texture> odd;
+};
+
+class image_texture : public texture {
+    public:
+        image_texture(const char* filename) : image(filename) {}
+
+        colour value(double u, double v, const point3& p) const override {
+            // return solid colour if no texture data
+            if (image.height() <= 0) {
+                return (colour(0, 1, 1));
+            }
+
+            // clamp input texture coordinates to [0, 1] x [1, 0]
+            u = interval(0, 1).clamp(u);
+            v = 1.0 - interval(0, 1).clamp(v); // flips v to image coordinates
+
+            auto i = int(u * image.width());
+            auto j = int(v * image.height());
+            auto pixel = image.pixel_data(i, j);
+
+            auto colour_scale = 1.0 / 255.0;
+            return (colour(colour_scale*pixel[0], colour_scale*pixel[1], colour_scale*pixel[2]));
+        }
+
+    private:
+        rtw_image image;
 };
 
 #endif
