@@ -104,7 +104,8 @@ src/
 ├── material.h        — Material base + lambertian, metal, and dielectric
 ├── aabb.h            — Axis-aligned bounding box with slab-method ray intersection
 ├── bvh.h             — Bounding volume hierarchy for sublinear ray–scene traversal
-├── texture.h         — Texture types: solid color, checker, image
+├── texture.h         — Texture types: solid color, checker, image, perlin-noise (marble)
+├── perlin.h          — Implements perlin class to help simulate randomness in textures
 ├── stb_implement.h   — stb_image implementation translation unit
 └── external/
     └── stb_image.h   — Image loading for pixel conversion (from https://github.com/nothings/stb)
@@ -115,7 +116,7 @@ src/
 - [x] Motion blur for moving objects
 - [x] Bounding volume hierarchies (BVH) to accelerate rendering of complex scenes
 - [x] Texture maps for image-based surface detail
-- [ ] Perlin noise for procedural textures
+- [x] Perlin noise for procedural textures
 - [ ] Quadrilateral primitives (foundation for disks, triangles, rings, and other 2D surfaces)
 - [ ] Light sources
 - [ ] Transforms for placing and rotating objects
