@@ -12,6 +12,7 @@ class camera{
         int image_width = 100;      // rendered image width in pixel count
         int samples_per_pixel = 10; // count of random samples per pixel (anti-aliasing)
         int max_depth = 10;         // maximum number of ray bounces into scene
+        colour background;          // scene background colour
 
         double vfov = 90;                       // vertical view angle (FOV)
         point3 lookfrom = point3(0, 0, 0);      // point camera is looking from
@@ -124,19 +125,22 @@ class camera{
 
             hit_record rec;
 
-            if (world.hit(r, interval(0.001, infinity), rec)) {
-                ray scattered;
-                colour attenuation;
-                if (rec.mat->scatter(r, rec, attenuation, scattered)) {
-                    return (attenuation * ray_colour(scattered, depth-1, world));
-                }
-                return (colour(0, 0, 0));
+            // if the ray hits nothing, return the background colour
+            if ( !(world.hit(r, interval(0.001, infinity), rec)) ) {
+                return background;
             }
 
-            vec3 unit_direction = unit_vector( r.direction() );
-            auto a = 0.5*(unit_direction.y() + 1.0);
+            ray scattered;
+            colour attenuation;
+            colour colour_from_emission = rec.mat->emitted(rec.u, rec.v, rec.p);
 
-            return ( (1.0-a)*colour(1.0, 1.0, 1.0) + a*colour(0.5, 0.7, 1.0) );
+            if (!(rec.mat->scatter(r, rec, attenuation, scattered))) {
+                return colour_from_emission;
+            }
+
+            colour colour_from_scatter = attenuation * ray_colour(scattered, depth - 1, world);
+
+            return (colour_from_emission + colour_from_scatter);
         }
 };
 
