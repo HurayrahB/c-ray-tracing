@@ -117,7 +117,7 @@ src/
 - [x] Bounding volume hierarchies (BVH) to accelerate rendering of complex scenes
 - [x] Texture maps for image-based surface detail
 - [x] Perlin noise for procedural textures
-- [ ] Quadrilateral primitives (foundation for disks, triangles, rings, and other 2D surfaces)
-- [ ] Light sources
+- [x] Quadrilateral primitives (foundation for disks, triangles, rings, and other 2D surfaces)
+- [x] Light sources
 - [ ] Transforms for placing and rotating objects
 - [ ] Volumetric rendering for smoke, clouds, and other participating media
