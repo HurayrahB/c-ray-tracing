@@ -1,123 +1,126 @@
-# Ray Tracer
+# C++ Ray Tracer
 
-A physically-based ray tracer written from scratch in modern C++. Implements geometric ray–object intersection, surface shading, and recursive path tracing to produce photorealistic renders of 3D scenes.
+A physically-based CPU path tracer written from scratch in C++17. Renders photorealistic scenes via recursive Monte Carlo path tracing, with a polymorphic scene graph, BVH spatial acceleration, procedural and image-based textures, volumetric media, and instance transforms.
 
-![Final scene render](images/final_render.jpg)
+![Final scene render](images/renders/final_scene.png)
+*Final scene — ~1,000+ objects, volumetric fog, procedural noise, image textures, area lighting*
 
-## Overview
+---
 
-A CPU ray tracer. It supports configurable cameras, multiple physically-based material types, and renders scenes containing hundreds of spheres with realistic lighting effects including reflections, refractions, and depth of field.
+## Technical Highlights
 
-The renderer writes PPM image output to `stdout`, so it composes naturally with shell pipelines. The project has no external dependencies, only the C++ standard library, and is built with CMake.
+### BVH Acceleration
 
-## Features
+Ray–scene intersection is accelerated with a bounding volume hierarchy (BVH) — a binary tree of axis-aligned bounding boxes (AABBs) built over all scene geometry. At each node, rays are tested against the bounding box using the slab method before descending into children, pruning entire subtrees on a miss.
 
-**Scene construction**
+Construction selects a random axis, sorts primitives by their AABB min along that axis, and splits at the midpoint — giving O(log n) average traversal depth. On scenes with 500+ objects this yields a **~6.5× speedup** over linear traversal.
 
-- Polymorphic `hittable` interface for extensible geometry
-- Bounding volume hierarchy (BVH) for logarithmic-time ray–scene intersection
-- Efficient closest-hit traversal with early exit on bounding box misses
+### Polymorphic Architecture
 
-**Sampling and shading**
+Three abstract base classes form the core:
 
-- Stochastic supersampling (antialiasing) with configurable samples per pixel
-- Recursive path tracing with bounce-depth control
-- Gamma-corrected colour output
-- Front/back face detection for correct inside/outside surface behaviour
+| Base class | Implementors |
+| --- | --- |
+| `hittable` | `sphere`, `quad`, `bvh_node`, `hittable_list`, `constant_medium`, `translate`, `rotate_y` |
+| `material` | `lambertian`, `metal`, `dielectric`, `diffuse_light`, `isotropic` |
+| `texture` | `solid_colour`, `checker_texture`, `image_texture`, `noise_texture` |
 
-**Textures**
+Any `hittable` can carry any `material`; any `material` can sample any `texture`. Instance transforms (`translate`, `rotate_y`) wrap any `hittable` without duplicating geometry — the ray is transformed into object space, tested, and the hit record is transformed back.
 
-- Solid color and checker pattern textures
-- Image texture mapping using stb_image
-- UV coordinate mapping for spheres (spherical coordinates)
+### Volumetric Rendering
 
-**Realistic Camera Model**
+`constant_medium` wraps any convex `hittable` and simulates participating media (fog, smoke) using exponential density sampling. Given a density parameter, it computes a random scatter distance — if that distance falls inside the volume boundary, the ray scatters via an `isotropic` material (uniform random direction). Otherwise it exits the volume unchanged.
 
-- Positionable camera with configurable field of view
-- Thin-lens depth of field via defocus disk sampling
-- Adjustable focus distance
+### Perlin Noise
 
-**Motion blur**
+Procedural textures use a Perlin noise implementation built on a hash lattice of random gradient vectors. Interpolation uses trilinear weighting with Hermitian smoothing (6t⁵ − 15t⁴ + 10t³) to eliminate grid artefacts. Turbulence layers multiple octaves (fBm) and feeds the result into a sine function to produce a marble-like pattern.
 
-- Rays carry a time parameter sampled randomly within [0, 1] per frame
-- Moving spheres interpolate their center position at ray time for correct intersection
-- BVH bounding boxes span the full range of motion for animated objects
+---
 
-## Tech Stack
+## Scene Catalogue
 
-- **Language:** C++17
-- **Build system:** CMake
-- **Compiler tested:** GCC 15.2.0 (MSYS2 UCRT64)
-- **Dependencies:** C++ standard library only
+<details>
+<summary>All 9 scenes</summary>
 
-## Building
+| # | Scene | Key features |
+| --- | --- | --- |
+| 1 | **Bouncing Spheres** | 500+ randomly placed spheres, depth of field, motion blur |
+| 2 | **Checkered Spheres** | 3D spatial checker texture, two large spheres |
+| 3 | **Earth** | Spherical UV mapping, image texture (earthmap.jpg) |
+| 4 | **Perlin Spheres** | Procedural marble texture, noise layering |
+| 5 | **Quads** | Five coloured quadrilateral primitives |
+| 6 | **Simple Light** | Rectangular and spherical area lights, dark background |
+| 7 | **Cornell Box** | Classic test scene — two rotated boxes, area ceiling light |
+| 8 | **Cornell Smoke** | Cornell box with volumetric fog via `constant_medium` |
+| 9 | **Final Scene** | All features combined — 1,000+ objects, 800×800 @ 1000 spp |
 
-### Prerequisites
+</details>
 
-- A C++17-compliant compiler (GCC, Clang, or MSVC)
-- CMake 3.10 or newer
+---
 
-### Configure and build
+## Render Gallery
+
+| Bouncing Spheres | Cornell Box |
+| --- | --- |
+| ![Bouncing Spheres](images/renders/bouncing_spheres.png) | ![Cornell Smoke](images/renders/cornell_smoke.png) |
+
+| Cornell Smoke | Final Scene |
+| --- | --- |
+| ![Simple Light](images/renders/simple_light.png) | ![Final Scene](images/renders/final_scene.png) |
+
+---
+
+## Build & Run
+
+**Prerequisites:** C++17 compiler, CMake 3.23+
 
 ```bash
-cmake -B build
+cmake -B build -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release
 cmake --build build
-```
-
-On Windows with MSYS2/MinGW, specify the generator explicitly:
-
-```powershell
-cmake -B build -G "MinGW Makefiles"
-cmake --build build
-```
-
-## Running
-
-The renderer writes a PPM image to standard output. Redirect it to a file:
-
-```bash
-./build/raytracer > image.ppm
+./build/myScene > output.ppm
 ```
 
 On PowerShell:
 
 ```powershell
-.\build\raytracer.exe | Out-File -Encoding ascii image.ppm
+.\build\myScene.exe | Out-File -Encoding ascii output.ppm
 ```
 
-Scene configuration, camera parameters, and render quality settings (image width, samples per pixel, max bounce depth) are defined in `src/main.cpp`.
+The renderer writes a PPM image to `stdout`. Scene selection and render parameters (resolution, samples per pixel, max bounce depth) are set via a `switch` statement in `src/main.cpp`.
+
+---
 
 ## Project Structure
 
 ```text
 src/
-├── main.cpp          — Scene setup and render entry point
-├── common.h          — Shared constants, RNG, and common includes
-├── vec3.h            — 3D vector math (also aliased as point3 and colour)
-├── ray.h             — Ray primitive
-├── interval.h        — Numeric interval helper for ray parameter bounds
-├── colour.h          — Gamma correction and PPM pixel output
-├── camera.h          — Camera, viewport, sampling, and ray-colour integrator
-├── hittable.h        — Abstract base for intersectable geometry
-├── hittable_list.h   — Scene container with linear closest-hit traversal
-├── sphere.h          — Ray–sphere intersection
-├── material.h        — Material base + lambertian, metal, and dielectric
-├── aabb.h            — Axis-aligned bounding box with slab-method ray intersection
-├── bvh.h             — Bounding volume hierarchy for sublinear ray–scene traversal
-├── texture.h         — Texture types: solid color, checker, image, perlin-noise (marble)
-├── perlin.h          — Implements perlin class to help simulate randomness in textures
-├── stb_implement.h   — stb_image implementation translation unit
+├── main.cpp            — Scene definitions and render entry point
+├── common.h            — Shared constants, RNG utilities, common includes
+├── vec3.h              — 3D vector math (aliased as point3, colour)
+├── ray.h               — Ray primitive with time parameter
+├── interval.h          — Numeric range for ray parameter bounds
+├── colour.h            — Gamma correction and PPM output
+├── camera.h            — Viewport, multi-sample integrator, ray_colour recursion
+├── hittable.h          — Abstract base class and hit_record
+├── hittable_list.h     — Linear scene container
+├── sphere.h            — Ray–sphere intersection, moving spheres
+├── quad.h              — Quadrilateral primitive and box() helper
+├── aabb.h              — Axis-aligned bounding box, slab-method intersection
+├── bvh.h               — BVH construction and traversal
+├── material.h          — Five material types
+├── texture.h           — Four texture types
+├── perlin.h            — Perlin noise with trilinear interpolation
+├── constant_medium.h   — Volumetric fog/smoke wrapper
+├── stb_implement.h     — stb_image implementation unit
 └── external/
-    └── stb_image.h   — Image loading for pixel conversion (from https://github.com/nothings/stb)
+    └── stb_image.h     — Image loading & pixel converter (from https://github.com/nothings/stb)
 ```
 
-## Future Improvements
+---
 
-- [x] Motion blur for moving objects
-- [x] Bounding volume hierarchies (BVH) to accelerate rendering of complex scenes
-- [x] Texture maps for image-based surface detail
-- [x] Perlin noise for procedural textures
-- [x] Quadrilateral primitives (foundation for disks, triangles, rings, and other 2D surfaces)
-- [x] Light sources
-- [ ] Transforms for placing and rotating objects
-- [ ] Volumetric rendering for smoke, clouds, and other participating media
+## Implementation Notes
+
+- **Motion blur** — rays carry a time parameter t ∈ [0,1]; moving spheres interpolate their centre at ray time; BVH bounding boxes span the full motion envelope
+- **Front/back face detection** — dot product of ray direction vs outward normal determines surface side at intersection time, enabling correct refraction and two-sided shading
+- **Gamma correction** — linear-to-sRGB conversion via square root (γ = 2.0)
+- **Instance transforms** — rays are inverse-transformed into object space rather than transforming geometry, keeping `bvh_node` construction simple and memory-efficient

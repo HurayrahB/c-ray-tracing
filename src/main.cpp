@@ -210,7 +210,7 @@ void simple_light() {
 
     cam.aspect_ratio = 16.0 / 9.0;
     cam.image_width = 400;
-    cam.samples_per_pixel = 100;
+    cam.samples_per_pixel = 300;
     cam.max_depth = 50;
     cam.background = colour(0, 0, 0);
 
@@ -391,7 +391,7 @@ void final_scene(int image_width, int samples_per_pixel, int max_depth) {
 }
 
 int main() {
-    switch (9) {
+    switch (9) { // change switch to swap scenes
         default:
             final_scene(400, 250, 4);
             break;
@@ -420,7 +420,7 @@ int main() {
             cornell_smoke();
             break;
         case 9:
-            final_scene(800, 10000, 40);
+            final_scene(800, 5000, 40);
             break;
     }
 }
