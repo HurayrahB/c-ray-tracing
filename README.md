@@ -2,7 +2,7 @@
 
 A physically-based CPU path tracer written from scratch in C++17. Renders photorealistic scenes via recursive Monte Carlo path tracing, with a polymorphic scene graph, BVH spatial acceleration, procedural and image-based textures, volumetric media, and instance transforms.
 
-![Final scene render](images/renders/final_scene.png)
+![Final scene render](images/renders/final_scene.jpg)
 *Final scene — ~1,000+ objects, volumetric fog, procedural noise, image textures, area lighting*
 
 ---
@@ -62,11 +62,11 @@ Procedural textures use a Perlin noise implementation built on a hash lattice of
 
 | Bouncing Spheres | Cornell Box |
 | --- | --- |
-| ![Bouncing Spheres](images/renders/bouncing_spheres.png) | ![Cornell Smoke](images/renders/cornell_smoke.png) |
+| ![Bouncing Spheres](images/renders/bouncing_spheres.jpg) | ![Cornell Smoke](images/renders/cornell_smoke.jpg) |
 
 | Cornell Smoke | Final Scene |
 | --- | --- |
-| ![Simple Light](images/renders/simple_light.png) | ![Final Scene](images/renders/final_scene.png) |
+| ![Simple Light](images/renders/simple_light.jpg) | ![Final Scene](images/renders/final_scene.jpg) |
 
 ---
 
