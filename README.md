@@ -60,11 +60,11 @@ Procedural textures use a Perlin noise implementation built on a hash lattice of
 
 ## Render Gallery
 
-| Bouncing Spheres | Cornell Box |
+| Bouncing Spheres | Cornell Smoke |
 | --- | --- |
 | ![Bouncing Spheres](images/renders/bouncing_spheres.jpg) | ![Cornell Smoke](images/renders/cornell_smoke.jpg) |
 
-| Cornell Smoke | Final Scene |
+| Simple Light | Final Scene |
 | --- | --- |
 | ![Simple Light](images/renders/simple_light.jpg) | ![Final Scene](images/renders/final_scene.jpg) |
 
