@@ -1,6 +1,8 @@
 # C++ Ray Tracer
 
-A physically-based CPU path tracer written from scratch in C++17. Renders photorealistic scenes via recursive Monte Carlo path tracing, with a polymorphic scene graph, BVH spatial acceleration, procedural and image-based textures, volumetric media, and instance transforms.
+A physically-based CPU path tracer written from scratch in C++17, using recursive Monte Carlo path tracing across a polymorphic scene graph with BVH acceleration. Supports procedural and image-based textures, volumetric media, area lighting, and instance transforms.
+
+Built for exposure into graphics programming to understand how rendering works from first principles. The project pushed me to reason about performance at scale, design extensible abstractions for geometry and materials, and produce measurable, visual output I could iterate on.
 
 ![Final scene render](images/renders/final_scene.jpg)
 *Final scene — ~1,000+ objects, volumetric fog, procedural noise, image textures, area lighting*
